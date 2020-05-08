@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block lang %}en{% endblock %}
+{% block head_title %}{{ collection }}{% endblock %}
+
+{% block content %}
+  <h1>{{ collection }}</h1>
+
+  <h2>{{ subtitle }}</h2>
+
+  <ul>
+    {% for work in works %}
+      <li><a href="{{ work.link }}">{{ work.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% if repo_link %}
+  <p>
+    The source is available at <a href="{{ repo_link }}">{{ repo_link }}</a>.
+  </p>
+  {% endif %}
+{% endblock %}

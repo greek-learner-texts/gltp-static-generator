@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{% block lang %}{% endblock %}">
+  <head>
+    <title>{% block head_title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&amp;subset=greek,greek-ext" rel="stylesheet">
+    <link href="default.css" rel="stylesheet">
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body class="{% block body_class %}default{% endblock %}">
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>

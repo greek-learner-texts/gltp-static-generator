@@ -1,0 +1,12 @@
+<div class="speech">
+  <span class="ref">{{ n }}</span>
+  <h2 class="speaker">
+    {{ node.children["00"].content }}
+  </h2>
+
+  {% for n, node in node.children.items() %}
+    {% if n != "00" %}
+    {% include node.kind + ".html" %}
+    {% endif %}
+  {% endfor %}
+</div>

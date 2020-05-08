@@ -1,0 +1,9 @@
+<div class="book">
+  <h2 class="ref">{{ n|roman }}</h2>
+
+  {% for n, node in node.children.items() %}
+    {% if n != "0" %}
+      {% include node.kind + ".html" %}
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block lang %}grc{% endblock %}
+{% block head_title %}{{ node.title }} | {{ collection }}{% endblock %}
+
+{% block content %}
+  <nav>&#x2191; <a href="./">{{ collection }}</a></nav>
+
+  {% include node.kind + ".html" %}
+{% endblock %}

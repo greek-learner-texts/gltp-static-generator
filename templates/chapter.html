@@ -1,0 +1,7 @@
+<div class="chapter">
+  <h3 class="ref">{{ n|roman }}</h3>
+
+  {% for n, node in node.children.items() %}
+    {% include node.kind + ".html" %}
+  {% endfor %}
+</div>

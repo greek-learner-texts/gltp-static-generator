@@ -1,0 +1,9 @@
+<div class="section">
+  <h2 class="section-title">{{ node.children["0"].children["0"].content }}</h2>
+
+  {% for n, node in node.children.items() %}
+    {% if n != "0" %}
+      {% include node.kind + ".html" %}
+    {% endif %}
+  {% endfor %}
+</div>

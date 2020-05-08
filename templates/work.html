@@ -1,0 +1,7 @@
+<div class="work">
+  <h1 lang="en">{{ node.title }}</h1>
+
+  {% for n, node in node.children.items() %}
+    {% include node.kind + ".html" %}
+  {% endfor %}
+</div>

@@ -33,14 +33,6 @@ typing = "3.6.1"
 
 [[package]]
 category = "main"
-description = "Python Library for Tom's Obvious, Minimal Language"
-name = "toml"
-optional = false
-python-versions = "*"
-version = "0.10.0"
-
-[[package]]
-category = "main"
 description = "Type Hints for Python"
 name = "typing"
 optional = false
@@ -48,7 +40,7 @@ python-versions = "*"
 version = "3.6.1"
 
 [metadata]
-content-hash = "785ded290604eb0e2a804c120bff909e904220f087d9e7ef1ba5a566861c79c0"
+content-hash = "6997fab8bf6e1acbcfac3d7e319bd96722071f492dc2af221fa6cc0d9d2b9891"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -94,11 +86,6 @@ markupsafe = [
 roman-numerals = [
     {file = "roman-numerals-0.1.0.tar.gz", hash = "sha256:21a8846e79074fa2c7e2b57b1cd9e3c7f2de33fd741f396b40017157643a26c2"},
     {file = "roman_numerals-0.1.0-py3-none-any.whl", hash = "sha256:583a44505423c2fb73b49f3459b9257d54768484c4b26bb1567cbdd6630cf538"},
-]
-toml = [
-    {file = "toml-0.10.0-py2.7.egg", hash = "sha256:f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"},
-    {file = "toml-0.10.0-py2.py3-none-any.whl", hash = "sha256:235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e"},
-    {file = "toml-0.10.0.tar.gz", hash = "sha256:229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c"},
 ]
 typing = [
     {file = "typing-3.6.1.tar.gz", hash = "sha256:c36dec260238e7464213dcd50d4b5ef63a507972f5780652e835d0228d0edace"},
